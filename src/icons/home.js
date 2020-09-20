@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ChevronsRight = props => {
+const Home = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -12,23 +12,19 @@ const ChevronsRight = props => {
       fill={color}
       {...otherProps}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.88 4.414L10.294 3 17 9.707l-6.707 6.707L8.88 15l5.292-5.293L8.88 4.414zm-5 0L5.294 3 12 9.707l-6.707 6.707L3.88 15l5.292-5.293L3.88 4.414z"
-      ></path>
+      <path d="M17.033 17.176a.834.834 0 01-.833.833H3.833A.834.834 0 013 17.176V9H1l8.44-7.783a.833.833 0 011.12 0L19 9h-1.967v8.176zM9 11v5h2v-5H9z"></path>
     </svg>
   );
 };
 
-ChevronsRight.propTypes = {
+Home.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-ChevronsRight.defaultProps = {
+Home.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default ChevronsRight;
+export default Home;

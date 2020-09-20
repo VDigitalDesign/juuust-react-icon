@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ChevronsRight = props => {
+const TrashBin = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,20 @@ const ChevronsRight = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M8.88 4.414L10.294 3 17 9.707l-6.707 6.707L8.88 15l5.292-5.293L8.88 4.414zm-5 0L5.294 3 12 9.707l-6.707 6.707L3.88 15l5.292-5.293L3.88 4.414z"
+        d="M7 2a1 1 0 011-1h4a1 1 0 011 1v1h5v2H2V3h5V2zM4 6h12v12a1 1 0 01-1 1H5a1 1 0 01-1-1V6zm2 11V8h2v9H6zm5-9H9v9h2V8zm1 9V8h2v9h-2z"
       ></path>
     </svg>
   );
 };
 
-ChevronsRight.propTypes = {
+TrashBin.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-ChevronsRight.defaultProps = {
+TrashBin.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default ChevronsRight;
+export default TrashBin;

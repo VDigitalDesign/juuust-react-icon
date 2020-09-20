@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ChevronsRight = props => {
+const Access = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,20 @@ const ChevronsRight = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M8.88 4.414L10.294 3 17 9.707l-6.707 6.707L8.88 15l5.292-5.293L8.88 4.414zm-5 0L5.294 3 12 9.707l-6.707 6.707L3.88 15l5.292-5.293L3.88 4.414z"
+        d="M9 5a4.002 4.002 0 01-3 3.874V13h3v2H6v2h4v2H4V8.874A4.002 4.002 0 015 1a4 4 0 014 4zM5 7a2 2 0 100-4 2 2 0 000 4zm7-2h7v4h-7V5zm0 6h7v4h-7v-4z"
       ></path>
     </svg>
   );
 };
 
-ChevronsRight.propTypes = {
+Access.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-ChevronsRight.defaultProps = {
+Access.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default ChevronsRight;
+export default Access;
